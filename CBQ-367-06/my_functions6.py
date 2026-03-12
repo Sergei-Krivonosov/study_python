@@ -6,12 +6,12 @@ def sum_ignore_non_numbers(items):
             total += i
 
     return total
-
-# print(sum_ignore_non_numbers([1, 2, 6.7, 10.0, 'Hey', None, 4.3]))
-
-
-
-
+#
+# # print(sum_ignore_non_numbers([1, 2, 6.7, 10.0, 'Hey', None, 4.3]))
+#
+#
+#
+#
 def is_triangle(length_1, length_2, length_3):
     if ((length_1 + length_2 > length_3) and
     (length_1 + length_3 > length_2) and
@@ -19,7 +19,7 @@ def is_triangle(length_1, length_2, length_3):
         return True
     else:
         return False
-#
+# #
 # print(is_triangle(3, 4, 5))
 #
 #
@@ -30,12 +30,8 @@ def average(*args):
 
     if len(args) == 0:
         return 0
-    for i in args:
-        summ += i
+    return sum(args) / len(args)
 
-    result = summ / len(args)
-    return result
-#
 # print(average(1, 2, 3, 4, 5, 6, 7, 8))
 #
 #
