@@ -74,7 +74,9 @@ class Car:
             self.speed += 10
 
     def brake(self):
-        if self.speed - 10 >= 0:
+        if self.speed - 10 < 0:
+            self.speed = 0
+        else:
             self.speed -= 10
 
 my_toyota = Car('Toyota', 180)
@@ -82,6 +84,9 @@ my_toyota.accelerate()
 my_toyota.accelerate()
 my_toyota.accelerate()
 my_toyota.accelerate()
+my_toyota.brake()
+my_toyota.brake()
+my_toyota.brake()
 my_toyota.brake()
 
 my_toyota.display_speed()
