@@ -14,23 +14,23 @@ p = rect.perimeter() # Вернул 12
 '''
 
 
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-
-    def area(self):
-        return self.width * self.height
-
-    def perimeter(self):
-        return 2 * (self.width + self.height)
-
-rect = Rectangle(2, 4)
-a = rect.area()
-b = rect.perimeter()
-
-print(a)
-print(b)
+# class Rectangle:
+#     def __init__(self, width, height):
+#         self.width = width
+#         self.height = height
+#
+#     def area(self):
+#         return self.width * self.height
+#
+#     def perimeter(self):
+#         return 2 * (self.width + self.height)
+#
+# rect = Rectangle(2, 4)
+# a = rect.area()
+# b = rect.perimeter()
+#
+# print(a)
+# print(b)
 
 '''
 Автомобиль
@@ -69,7 +69,7 @@ class Car:
 
     def accelerate(self):
         if self.speed + 10 >= self.max_speed:
-            self.speed += 0
+            self.speed = self.max_speed
         else:
             self.speed += 10
 
