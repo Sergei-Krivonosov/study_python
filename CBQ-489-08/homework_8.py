@@ -37,10 +37,10 @@ class BankAccount:
 class OverdraftAccount(BankAccount):
 
     def withdraw(self, amount):
-        if self._balance <= amount:
+        #if self._balance <= amount:
             self._balance -= amount
 
-jack_account = OverdraftAccount('jack', 0)
+jack_account = OverdraftAccount('jack', 1000)
 jack_account.withdraw(100)
 jack_account.withdraw(100)
 jack_account.withdraw(100)
