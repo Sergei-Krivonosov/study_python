@@ -18,10 +18,15 @@ class BankAccount:
     def get_balance(self):
         return self._balance
 
-account = BankAccount('Maria', 1000)
-account.deposit(900)
-account.withdraw(100)
-print(account.get_balance())
+# account = BankAccount('Maria', 1000)
+# account.deposit(1000)
+# account.withdraw(100)
+# account.withdraw(100)
+# account.withdraw(100)
+# account.withdraw(100)
+# account.withdraw(100)
+#
+# print(account.get_balance())
 
 
 
@@ -34,10 +39,9 @@ class OverdraftAccount(BankAccount):
     def withdraw(self, amount):
         if self._balance <= amount:
             self._balance -= amount
-            print('Недостаточно средств!')
 
 jack_account = OverdraftAccount('jack', 0)
-jack_account.withdraw(200)
+jack_account.withdraw(100)
 jack_account.withdraw(100)
 jack_account.withdraw(100)
 print(jack_account.get_balance())
